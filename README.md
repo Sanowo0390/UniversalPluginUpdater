@@ -20,6 +20,8 @@ UniversalPluginUpdater 的开发受到 [APT](https://wiki.debian.org/zh_CN/Apt) 
 
 对于初次使用 UPU 的用户来说，阅读 [UPU 帮助手册](https://docs.upu.dreamvoid.me/)能够快速开始使用 UPU，许多问题也能够通过查看文档得到解答，其中也包含了 UPU 如何检查其他插件的更新。
 
+使用 `updater.strategy: backup` 可以在更新时保留旧版 JAR。参见[备份升级策略](docs/backup-upgrade.md)。
+
 ## 下载
 * 稳定版本
   * [Modrinth](https://modrinth.com/plugin/upu/versions)

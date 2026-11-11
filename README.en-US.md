@@ -20,6 +20,8 @@ The development of UniversalPluginUpdater was inspired by [APT](https://wiki.deb
 
 For first-time UPU users, reading the [UPU Help Manual](https://docs.upu.dreamvoid.me/en/) can help them get started quickly. Many questions can be answered by consulting the documentation, which also includes how UPU checks for updates to other plugins.
 
+Set `updater.strategy: backup` to retain the previous JAR when upgrading. See the [backup upgrade strategy guide](docs/backup-upgrade.md).
+
 ## Download
 * Stable version
   * [Modrinth](https://modrinth.com/plugin/upu/versions)
