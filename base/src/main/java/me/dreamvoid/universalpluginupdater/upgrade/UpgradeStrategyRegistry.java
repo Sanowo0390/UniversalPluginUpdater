@@ -71,7 +71,7 @@ public final class UpgradeStrategyRegistry {
 
     /**
      * 获取当前活跃的升级策略
-     * 如果当前活跃策略不存在，自动回退到 native 策略
+     * 如果当前活跃策略不存在，除 backup 外自动回退到 native 策略
      * @return 当前活跃的升级策略
      */
     @Nullable
@@ -80,7 +80,7 @@ public final class UpgradeStrategyRegistry {
         UpgradeStrategy strategy = strategies.get(activeStrategy);
         
         // 如果不存在且不是 native，则回退到 native
-        if (strategy == null && !activeStrategy.equals("native")) {
+        if (strategy == null && !activeStrategy.equals("native") && !activeStrategy.equals(BackupUpgradeStrategy.ID)) {
             logger.warning(tr("message.service.strategy.warn.unavailable-fallback", activeStrategy));
             this.activeStrategy = "native";
             strategy = strategies.get("native");

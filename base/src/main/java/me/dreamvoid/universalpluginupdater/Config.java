@@ -17,6 +17,7 @@ public abstract class Config {
     public static boolean Updater_AllowUpgradeNow = true;
     public static String Updater_Filename = "${originName}";
     public static boolean Updater_ForceFilename = false;
+    public static String Updater_Backup_Directory = ".disabled";
     public static String Updater_Proxy_Uri = null;
     public static String Updater_Proxy_Username = null;
     public static String Updater_Proxy_Password = null;
@@ -45,6 +46,7 @@ public abstract class Config {
         Updater_AllowUpgradeNow = getBoolean("updater.allow-upgrade-now", Updater_AllowUpgradeNow);
         Updater_Filename = getString("updater.filename", Updater_Filename);
         Updater_ForceFilename = getBoolean("updater.force-filename", Updater_ForceFilename);
+        Updater_Backup_Directory = getString("updater.backup.directory", ".disabled");
         Updater_Proxy_Uri = getString("updater.proxy.uri", null);
         Updater_Proxy_Username = getString("updater.proxy.username", null);
         Updater_Proxy_Password = getString("updater.proxy.password", null);

@@ -11,6 +11,8 @@ updater:
   allow-upgrade-now: true
   filename: ${originName}
   force-filename: false
+  backup:
+    directory: .disabled
   proxy:
     uri: ~
     username: ~

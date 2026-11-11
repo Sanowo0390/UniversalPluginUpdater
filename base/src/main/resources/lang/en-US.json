@@ -175,5 +175,11 @@
     "tag.update.modrinth.failed.no-primary-file": "No primary file",
     "tag.update.modrinth.failed.no-selected-version": "no selected version",
     "tag.update.spigotmc.failed.no-selected-version": "no selected version",
-    "tag.update.url.failed.no-download-url": "no download url"
+    "tag.update.url.failed.no-download-url": "no download url",
+    "message.strategy.backup.success": "Replaced files for {0}; transaction directory: {1}. Restart to load the new version.",
+    "message.strategy.backup.failed": "Backup update failed for {0}; file or transaction: {1}; reason: {2}.",
+    "message.strategy.backup.unavailable": "Could not dispatch {0} upgrade task(s) with backup. Check the strategy and pending tasks.",
+    "message.strategy.backup.recovered": "Recovered backup transaction {0}; state: {1}.",
+    "message.strategy.backup.recovery-failed": "Backup recovery needs attention: {0}; {1}. Preserve the files and inspect the journal.",
+    "message.strategy.backup.conflict": "Skipped {0} upgrade task(s) that conflict with backup updates."
 }

@@ -156,5 +156,11 @@
     "tag.update.modrinth.failed.no-primary-file": "メインの配布ファイルがありません",
     "tag.update.modrinth.failed.no-selected-version": "対象のバージョンがありません",
     "tag.update.spigotmc.failed.no-selected-version": "対象のバージョンがありません",
-    "tag.update.url.failed.no-download-url": "ダウンロードURLがありません"
+    "tag.update.url.failed.no-download-url": "ダウンロードURLがありません",
+    "message.strategy.backup.success": "{0}のファイルを置き換えました。操作フォルダー: {1}。新版を読み込むには再起動してください。",
+    "message.strategy.backup.failed": "{0}のバックアップ付き更新に失敗しました。ファイルまたは操作記録: {1}。理由: {2}。",
+    "message.strategy.backup.unavailable": "backup方式で{0}件の更新を実行できませんでした。更新方式と予約を確認してください。",
+    "message.strategy.backup.recovered": "バックアップ更新の操作記録を復旧しました: {0}。状態: {1}。",
+    "message.strategy.backup.recovery-failed": "バックアップ更新の復旧に確認が必要です: {0}。{1}。ファイルを保持し、操作記録を確認してください。",
+    "message.strategy.backup.conflict": "バックアップ更新と競合する{0}件の更新をスキップしました。"
 }

@@ -175,6 +175,11 @@
     "tag.update.modrinth.failed.no-primary-file": "无主文件",
     "tag.update.modrinth.failed.no-selected-version": "无已选版本",
     "tag.update.spigotmc.failed.no-selected-version": "无已选版本",
-    "tag.update.url.failed.no-download-url": "无下载链接"
-
+    "tag.update.url.failed.no-download-url": "无下载链接",
+    "message.strategy.backup.success": "已替换 {0} 的文件；事务目录：{1}。重启后加载新版。",
+    "message.strategy.backup.failed": "{0} 的备份更新失败；文件或事务：{1}；原因：{2}。",
+    "message.strategy.backup.unavailable": "无法使用 backup 调度 {0} 个升级任务，请检查升级策略和待处理任务。",
+    "message.strategy.backup.recovered": "已恢复备份事务 {0}；状态：{1}。",
+    "message.strategy.backup.recovery-failed": "备份恢复需要检查：{0}；{1}。请保留文件并检查事务日志。",
+    "message.strategy.backup.conflict": "已跳过与备份更新冲突的 {0} 个升级任务。"
 }
